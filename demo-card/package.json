@@ -1,0 +1,29 @@
+{
+  "name": "cards",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "serve ./dist",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build:server": "npm run build && docker build . -t bakoushin/moowi-demo-card",
+    "start:server": "docker run -it -p 3000:3000 --rm bakoushin/moowi-demo-card",
+    "push:server": "docker push bakoushin/moowi-demo-card"
+  },
+  "dependencies": {
+    "@emotion/react": "11.9.0",
+    "qrcode.react": "3.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "serve": "13.0.2"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "11.9.2",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}
