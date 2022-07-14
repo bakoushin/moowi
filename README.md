@@ -2,7 +2,7 @@
 
 Moowi is a mobile wallet that can be topped up with gift cards.
 
-You can get a gift card, scan it, and volilà: you just received crypto in your wallet.
+You can get a gift card, scan it, and voilà: you just received crypto in your wallet.
 
 ## Quickstart
 
